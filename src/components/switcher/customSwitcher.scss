@@ -1,0 +1,51 @@
+.switch_wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .switch_text {
+    @include font_default;
+    padding: 1rem;
+  }
+}
+
+.switch {
+  width: 70px;
+  height: 34px;
+  border-radius: 30px;
+  background: rgb(212, 212, 212);
+  cursor: pointer;
+  position: relative;
+}
+
+.switch_off {
+  background: rgb(212, 212, 212);
+  transition: background 0.4s;
+}
+
+.switch_on {
+  background: rgb(0, 202, 51);
+  transition: background 0.4s;
+}
+
+.inner_switch {
+  height: 30px;
+  width: 30px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+.inner_switch_left {
+  top: 2px;
+  left: 2px;
+  transition: left 0.4s;
+}
+
+.inner_switch_right {
+  top: 2px;
+  left: 38px;
+  transition: left 0.4s;
+}

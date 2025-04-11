@@ -1,0 +1,70 @@
+@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+@import url('href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@layer xs, md, lg, xl;
+
+$breakpoints: (
+  xs: 320px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1600px,
+);
+
+@mixin xs {
+  @layer xs {
+    @media only screen and (min-width: map-get($breakpoints, xs)) {
+      @content;
+    }
+  }
+}
+
+@mixin md {
+  @layer md {
+    @media only screen and (min-width: map_get($breakpoints, md)) {
+      @content;
+    }
+  }
+}
+
+@mixin lg {
+  @layer lg {
+    @media only screen and (min-width: map_get($breakpoints, lg)) {
+      @content;
+    }
+  }
+}
+
+@mixin xl {
+  @layer xl {
+    @media only screen and (min-width: map_get($breakpoints, xl)) {
+      @content;
+    }
+  }
+}
+
+@mixin font_title_default {
+  font-family: 'Special Gothic Expanded One', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin font_title_cool {
+  font-family: 'Press Start 2P', system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin font_default {
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@mixin font_cool {
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+  font-style: normal;
+}
