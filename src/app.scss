@@ -1,0 +1,31 @@
+div#app {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(232, 232, 219, 0.773);
+}
+
+.app_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 80vw;
+  height: 90vh;
+  border-radius: 2rem;
+  box-shadow:
+    rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+
+  &_default {
+    background-color: #fff;
+    flex-direction: column;
+  }
+
+  &_cool {
+    background-color: rgba(85, 98, 73, 0.927);
+    flex-direction: row;
+  }
+}

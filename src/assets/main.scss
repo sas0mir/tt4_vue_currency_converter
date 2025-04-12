@@ -1,6 +1,6 @@
 @import './base.css';
 @import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
-@import url('href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
@@ -52,7 +52,7 @@ $breakpoints: (
 }
 
 @mixin font_title_cool {
-  font-family: 'Press Start 2P', system-ui;
+  font-family: 'Bruno Ace', sans-serif;
   font-weight: 400;
   font-style: normal;
 }

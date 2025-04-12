@@ -3,9 +3,33 @@
   display: flex;
   align-items: center;
 
+  &_default {
+    flex-direction: row;
+  }
+
+  &_cool {
+    flex-direction: column;
+  }
+
   .switch_text {
-    @include font_default;
     padding: 1rem;
+
+    &_default {
+      @include font_default;
+      color: #555;
+
+      &.active {
+        color: green;
+      }
+    }
+
+    &_cool {
+      @include font_cool;
+
+      &.active {
+        color: red;
+      }
+    }
   }
 }
 
