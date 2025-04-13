@@ -4,6 +4,7 @@ import NavigationMenu from './components/navigation/NavigationMenu.vue'
 import CustomSwitcher from './components/switcher/CustomSwitcher.vue'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import DropdownSelect from './components/dropdownSelect/DropdownSelect.vue'
+import HomepageTile from './components/tile/HomepageTile.vue'
 
 import App from './App.vue'
 import router from './router'
@@ -14,6 +15,7 @@ app.component('NavigationMenu', NavigationMenu)
 app.component('CustomSwither', CustomSwitcher)
 app.component('FontAwesomeIcon', FontAwesomeIcon)
 app.component('DropdownSelect', DropdownSelect)
+app.component('HomepageTile', HomepageTile)
 
 app.use(createPinia())
 app.use(router)

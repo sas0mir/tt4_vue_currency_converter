@@ -4,7 +4,10 @@
     ref="dropdownRef"
     @click="toggleOpen"
   >
-    <div class="dds_selected">{{ selectedLabel }}</div>
+    <div class="dds_selected">
+      {{ selectedLabel }}
+      <FontAwesomeIcon :icon="faCircleDown" />
+    </div>
     <ul v-if="isOpen" class="dds_list">
       <li
         v-for="option in options"
@@ -21,6 +24,8 @@
 <script setup lang="ts">
 import { ref, defineProps, onMounted, onBeforeUnmount } from 'vue'
 import { useThemeStore } from '@/stores/theme'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faCircleDown } from '@fortawesome/free-solid-svg-icons'
 import './dropdownSelect.scss'
 
 const props = defineProps<{

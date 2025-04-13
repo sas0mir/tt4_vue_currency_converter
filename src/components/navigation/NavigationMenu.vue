@@ -37,7 +37,7 @@ import DropdownSelect from '../dropdownSelect/DropdownSelect.vue'
 
 const themeStore = useThemeStore()
 const currencyStore = useCurrencyStore()
-const options = ['USD', 'EUR', 'RUB']
+const options = ['usd', 'eur', 'rub']
 
 function switchTheme(value: boolean) {
   if (value) themeStore.setTheme('cool')
@@ -45,7 +45,6 @@ function switchTheme(value: boolean) {
 }
 
 function handleChangeCurrency(value: string) {
-  console.log('CURR->', value, currencyStore.currency)
   if (value && value !== currencyStore.currency) currencyStore.setCurrency(value)
 }
 </script>

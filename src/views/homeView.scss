@@ -1,0 +1,60 @@
+.homeview_wrapper {
+  position: relative;
+  width: 90%;
+  padding: 2rem;
+  overflow: auto;
+
+  &_default {
+    margin: 2rem 0;
+    border-radius: 1rem;
+    background-color: rgba(232, 232, 219, 0.773);
+    box-shadow:
+      inset rgba(17, 17, 26, 0.1) 0px 2px 8px,
+      inset rgba(17, 17, 26, 0.05) 0px 4px 16px;
+  }
+
+  .homeview_info {
+    position: relative;
+    width: 100%;
+    min-height: 5%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+
+    .info_item {
+      display: flex;
+      min-width: 15%;
+      flex-direction: column;
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 1rem;
+      transition: all 0.5s ease-in-out;
+      cursor: copy;
+      box-shadow:
+        rgba(17, 17, 26, 0.1) 0px 2px 8px,
+        rgba(17, 17, 26, 0.05) 0px 4px 16px;
+
+      &_default {
+        h3 {
+          @include font_title_default;
+        }
+
+        p {
+          @include font_default;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      h3 {
+        align-self: flex-start;
+      }
+
+      p {
+        align-self: flex-end;
+      }
+    }
+  }
+}

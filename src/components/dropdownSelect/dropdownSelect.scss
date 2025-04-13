@@ -30,6 +30,13 @@
     }
   }
 
+  .dds_selected {
+    display: flex;
+    min-width: 80%;
+    width: auto;
+    justify-content: space-between;
+  }
+
   .dds_list {
     position: absolute;
     width: 100%;
@@ -37,6 +44,7 @@
     left: 0;
     padding: 1rem;
     border-radius: 1rem;
+    z-index: 99;
 
     .dds_item {
       padding: 1rem;
